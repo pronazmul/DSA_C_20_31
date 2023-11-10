@@ -24,7 +24,4 @@
 
 ## Find Me On
 
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/pronazmul
+[![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pronazmul)

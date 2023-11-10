@@ -4,6 +4,7 @@
 int linearSearch(int arr[], int size, int key);
 void bubbleSort(int arr[], int size);
 int binarySearch(int arr[], int size, int key);
+void insertionSort(int arr[], int size);
 
 int main() {
     int arr[] = {64, 34, 25, 12, 22, 11, 90};
@@ -32,6 +33,12 @@ int main() {
         printf("Binary Search: Element %d not found\n", binarySearchKey);
     }
 
+    // Insertion Sort
+    int insertionSortArr[] = {64, 34, 25, 12, 22, 11, 90};
+    int insertionSortSize = sizeof(insertionSortArr) / sizeof(insertionSortArr[0]);
+    insertionSort(insertionSortArr, insertionSortSize);
+    printf("After Insertion Sort: ");
+    printArray(insertionSortArr, insertionSortSize);
 
     return 0;
 }
@@ -79,3 +86,19 @@ int binarySearch(int arr[], int low, int high, int key) {
     return -1; // Element not found
 }
 
+// Function to perform Insertion Sort
+void insertionSort(int arr[], int n) {
+    for (int i = 1; i < n; i++) {
+        int key = arr[i];
+        int j = i - 1;
+
+        // Move elements of arr[0..i-1] that are greater than key
+        // to one position ahead of their current position
+        while (j >= 0 && arr[j] > key) {
+            arr[j + 1] = arr[j];
+            j = j - 1;
+        }
+
+        arr[j + 1] = key;
+    }
+}

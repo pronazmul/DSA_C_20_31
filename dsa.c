@@ -3,13 +3,11 @@
 // Function prototypes
 int linearSearch(int arr[], int size, int key);
 void bubbleSort(int arr[], int size);
+int binarySearch(int arr[], int size, int key);
 
 int main() {
     int arr[] = {64, 34, 25, 12, 22, 11, 90};
     int n = sizeof(arr) / sizeof(arr[0]);
-
-    printf("Original array: ");
-    printArray(arr, n);
 
     // Linear Search
     int linearSearchKey = 22;
@@ -24,6 +22,16 @@ int main() {
     bubbleSort(arr, n);
     printf("After Bubble Sort: ");
     printArray(arr, n);
+
+    // Binary Search
+    int binarySearchKey = 22;
+    int binarySearchResult = binarySearch(arr, 0, n - 1, binarySearchKey);
+    if (binarySearchResult != -1) {
+        printf("Binary Search: Element %d found at index %d\n", binarySearchKey, binarySearchResult);
+    } else {
+        printf("Binary Search: Element %d not found\n", binarySearchKey);
+    }
+
 
     return 0;
 }
@@ -51,3 +59,23 @@ void bubbleSort(int arr[], int n) {
         }
     }
 }
+
+// Function to perform Binary Search (requires a sorted array)
+int binarySearch(int arr[], int low, int high, int key) {
+    while (low <= high) {
+        int mid = low + (high - low) / 2;
+
+        if (arr[mid] == key) {
+            return mid; // Element found, return its index
+        }
+
+        if (arr[mid] < key) {
+            low = mid + 1;
+        } else {
+            high = mid - 1;
+        }
+    }
+
+    return -1; // Element not found
+}
+

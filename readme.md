@@ -1,26 +1,34 @@
 <h1 align="center">Data structures And Algorithms Using C</h1>
+<hr/>
+<p>Nazmul Huda: 20_31</p>
 
 ## `Data structure`:
 
 - `Array`
 - `Stacks`
 - `Queues`
-- `Linked Lists`
-- `Trees`
-- `Graphs`
-- `Hash Tables`
+- `Singly Linked List`
+- `Doubly Linked List`
+- `Circular Singly Linked List`
+- `Circular Doubly Linked List`
+- `Tower of Hanoi`
 
 ## `Algorithms`:
 
 - `Searching Algorithms`
-
-  - Linear search
-  - Binary search
+  - Linear Search
+  - Binary Search
+  - Binary Tree
+  - Binary Tree
+  - Binary Tree
+  - Factorial of a number
+  - Fibonacci series
 
 - `Sorting Algorithms`
   - Bubble sort
-  - Selection Sort
   - Insertion Sort
+  - Quick Sort
+  - Merge Sort
 
 ## Find Me On
 

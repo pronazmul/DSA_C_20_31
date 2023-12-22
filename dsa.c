@@ -303,8 +303,8 @@ void showWelcomeMessage() {
     printf(GREEN_COLOR);
     printf("******************************************************************************\n");
     printf("*                 Welcome to Data Structure Programs Menu                    *\n");
-    printf("*                     Student Name: Md. Zubaer Ahammed                       *\n");
-    printf("*                         Student ID: 20052801006                            *\n");
+    printf("*                     Student Name: Md. Nazmul Huda                          *\n");
+    printf("*                         Student ID: 20052801031                            *\n");
     printf("******************************************************************************\n");
     printf(RESET_COLOR);
 }
